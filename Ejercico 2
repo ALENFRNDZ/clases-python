@@ -1,0 +1,8 @@
+# Ejercicio 2 Nos darán una lista de nombres, queremos una nueva lista con esos nombres todos en minuscula
+ 
+# Lista = ["john", "DOE", "sTaRlEtTe", "TesT"]
+# for nombre in Lista:
+    # print(nombre.lower())
+
+variable = ["john", "DOE", "sTaRlEtTe", "TesT"] 
+for x in variable: print(x.lower())

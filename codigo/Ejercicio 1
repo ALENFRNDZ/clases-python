@@ -1,0 +1,5 @@
+
+# Pedir por pantalla una dirección, separada por comas, e imprimir esa dirección separada (hay un método para separar strings en una lista)
+
+direccion = input("Dime tu dirección: ")
+print(direccion.split(", "))

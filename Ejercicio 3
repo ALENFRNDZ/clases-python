@@ -1,0 +1,20 @@
+
+# Ejercicio 3
+# Crear un sistema de contraseñas, va tener dos pasos:
+# Primer paso, crear la contraseña. Solo me debería dejar crear una contraseña que tenga al menos 8 caracteres, si tiene menos, se guarda como None
+# Segundo paso, usar la contraseña. Pedimos al usuario que meta su contraseña, y si es distinta, no le dejamos entrar
+
+password = input("Escribe una contraseña: ")
+
+if len(password) < 8:
+    print("No cumple los criterios, el password quedará en blanco")
+    password = None
+
+if password != None:
+    login = input("Introduce tu contraseña: ")
+
+    if login == password:
+        print("ACCESO CONCEDIDO")
+    else:
+        print("ACCESO DENEGADO")
+
