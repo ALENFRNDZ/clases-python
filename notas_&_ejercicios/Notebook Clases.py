@@ -103,30 +103,94 @@ print (edad, type(edad))
     tupla = (1, 2, 3)
 
 
+    #Los tipos complejos de variables(listas[], tuplas() y diccionarios{}) también tienen métodos asociados.
+       
+        #metodos de tuplas
+            #.count(valor) ---> Cuenta el número de repeticiones de ese valor/objeto
+            #.index(valor) ---> Indica el índice de ese valor, pero solo la primera vez que ha sido encontrado
+
+        #metodos de listas
+            #.count(valor) ---> Cuenta el número de repeticiones de ese valor/objeto
+            #.index(valor) ---> Indica el índice de ese valor, pero solo la primera vez que ha sido encontrado        
+            #.append(valor) ---> Añade al final de la lista ese valor/objeto (su referencia)
+            #.insert(int, valor) ---> Añade en la posicion int ese valor/objeto (su referencia)
+            #.extend(iterable) ---> Concatena un iterable (cualquier iterable) con esa lista
+            #.clear() ---> Vacia la lista
+            #.copy() ---> Crea una copia de esa lista (id() sera distinto para copias, siendo pues dos objetos distintos)
+            #.pop(int) ---> Elimina el valor en el indice int, por defecto el último elemento
+            #.remove(valor) ---> Elimina la primera vez que encuentra ese valor
+            #.reverse() ---> Invierte la lista
+            #.sort(bool, funcion) ---> Ordena la lista. Este método es poderoso pero complejo, permite indicar si se ordena de menor a mayor, o al reves (reversed), y permite especificar un método de ordenación bastante complejo y poderoso
+       
+        #metodos de diccionarios
+            #.get(clave, valor) ---> Extrae valor de esa clave, y si no la encuentra, muestra valor
+            #.setdefault(clave, valor) ---> Extrae valor de esa clave, y si no la encuentra, crea una clave-valor
+            #.clear() ---> Vacia el diccionario
+            #.copy() ---> Hace una copia del diccionario
+            #.pop(clave, valor) ---> Elimina esa clave, y si no la encuentra, muestra valor
+            #.update(diccionario) ---> Actualiza un diccionario con nuevas clave-valor
+            #.values() ---> Extrae los valores de ese diccionario
+            #.keys() ---> Extrae las claves de ese diccionario
+            #.items() ---> Extrae tuplas (clave, valor) de ese diccionario
+            #.fromkeys(iterable, valor) ---> Crea un diccionario formando claves con el iterable, y con un mismo valor (definido en el método)
+
 
 
 # Bloques
 
-# Control de flujos
-    #Bucles
-    lista = [1,2,3,4,5,6,7,8]
+    # Control de flujos
+        #Bucles
+        lista = [1,2,3,4,5,6,7,8]
 
-    #Bucle while
+        #Bucle while
 
-    n = 0
-    while n <= 5:
-        n+=1
-        print(n)
+        n = 0
+        while n <= 5:
+            n+=1
+            print(n)
 
-    #Bucle for
+        #Bucle for
 
-    lista = [1,2,3,4,5,6,7,8]
-    for numero in lista:
-        print(numero)
+        lista = [1,2,3,4,5,6,7,8]
+        for numero in lista:
+            print(numero)
 
 
-if nombre == "Alén Fernández":
-    print("Hola")
+    if nombre == "Alén Fernández":
+        print("Hola")
+
 
 # funciones --> nombre()
 
+#Las funciones son bloques de código reutilizables que realizan una tarea específica. 
+# Se definen utilizando la palabra clave `def`, seguida del nombre de la función y paréntesis. 
+# Pueden aceptar parámetros y devolver valores.
+
+def mi_funcion():
+    print("Hola, soy una función")
+
+#Las funciones deben llamarse o invocarse para que tengan efecto
+
+mi_funcion()  # Llamada a la función
+
+#Hay 4 tipos de funciones, de acuerdo a: 1,2 si tienen (o no) un return, o 3,4 si tienen (o no) argumentos.
+
+La keyword return devuelve un valor desde la función
+
+def suma_dos_numeros():
+    numero_1 = int(input("Primer numero: "))
+    numero_2 = int(input("Segundo numero: "))
+    return numero_1 + numero_2  # Especificamos que devuelva la suma de los dos numeros
+
+mi_suma = suma_dos_numeros()  # Se guarda en una variable el return de la funcion
+print(mi_suma)
+
+#Las funciones pueden tener argumentos, que son valores que se pasan a la función para que los utilice en su ejecución.
+
+def suma_dos_numeros(numero_1, numero_2):  # Estos son sus dos argumentos
+    return numero_1 + numero_2
+
+mi_suma = suma_dos_numeros(13, 5)  # Y aqui se le pasan dos parametros, 13 y 5
+print(mi_suma)
+mi_otra_suma = suma_dos_numeros(mi_suma, 10)
+print(mi_otra_suma)
