@@ -160,6 +160,20 @@ print (edad, type(edad))
         print("Hola")
 
 
+#Tipos de errores en python
+    #Existen varios tipos de errores en Python, algunos de los más comunes son:
+    
+        - SyntaxError: #Error de sintaxis, ocurre cuando el código no sigue las reglas del lenguaje.
+        - NameError: #Error de nombre, ocurre cuando se intenta usar una variable o función que no ha sido definida.
+        - TypeError: #Error de tipo, ocurre cuando se realiza una operación con un tipo de dato incorrecto.
+        
+        - ValueError: #Error de valor, ocurre cuando se pasa un valor incorrecto a una función.
+        - IndexError: #Error de índice, ocurre cuando se intenta acceder a un índice que no existe en una lista o tupla.
+        - KeyError: #Error de clave, ocurre cuando se intenta acceder a una clave que no existe en un diccionario.
+        - AttributeError: #Error de atributo, ocurre cuando se intenta acceder a un atributo que no existe en un objeto.
+        
+
+
 # funciones --> nombre()
 
 #Las funciones son bloques de código reutilizables que realizan una tarea específica. 
